@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav container">
+        <h1 class="logo">WEBSITe</h1>
+        <ul class="nav-items">
+          <li class="nav-item"><a href="home">HOME</a></li>
+          <li class="nav-item"><a href="">Todo</a></li>
+          <li class="nav-item"><a href="">SIGN UP</a></li>
+        </ul>
+      </nav>
+      <div class="headline">
+        <h2 id="main">
+          Manage Your Task <span style="display: none">Hello</span>
+        </h2>
+        <button class="btn btn-headline">Learn More</button>
+      </div>
+    </header>
+    <section class="todo-section container">
+      <h2>Your Plan for Today ?</h2>
+      <form class="form-todo">
+        <input type="text" placeholder="ADD TODO" />
+        <input type="submit" value="ADD-TODO" class="btn" />
+      </form>
+      <ul class="todo-list">
+        <li>
+          <span class="text">Do this Do That</span>
+          <div class="todo-buttons">
+            <button class="todo-btn done">Done</button>
+            <button class="todo-btn remove">Remove</button>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="section-signup container">
+      <h2>SIGN UP</h2>
+      <form class="signup">
+        <div class="form-group">
+          <label for="username">USERNAME</label>
+          <input type="text" name="username" id="username" />
+        </div>
+
+        <div class="form-group">
+          <label for="password">PASSWORD</label>
+          <input type="password" name="password" id="password" />
+        </div>
+
+        <div class="form-group">
+          <label for="confirmPassword">CONFIRM PASSWORD</label>
+          <input type="password" name="confirmPassword" id="confirmPassword" />
+        </div>
+
+        <div class="form-group">
+          <label for="phone">PHONE</label>
+          <input type="text" name="phone" id="phone" />
+        </div>
+
+        <div class="form-group">
+          <label for="email">EMAIL</label>
+          <input type="email" name="email" id="email" />
+        </div>
+
+        <div class="form-group">
+          <label for="about">ABOUT YOURSELF</label>
+          <textarea name="about " id="about" cols="30" rows="10"></textarea>
+        </div>
+
+        <button type="submit" class="btn signup-btn">SUBMIT</button>
+      </form>
+    </section>
+  </body>
+</html>
